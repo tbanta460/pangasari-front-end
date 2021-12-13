@@ -31,7 +31,7 @@ const Login = () => {
                 .then(user => {
                     if(user){
                         const isUser = user.data.data
-                        window.location.assign(`http://localhost:3000/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
+                        window.location.assign(`https://pangasari.vercel.app/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
                     }
                 })
                 .catch(error => console.log(error.response))
@@ -100,7 +100,7 @@ const Login = () => {
                     const user = respone.data.data
                     await sendObj(user)
                     await Cookies.set('user', user._id);
-                    window.location.assign(`http://localhost:3000/user/dashboard/${user.firstName+"_"+user.lastName.split(" ").filter(e => e).join("_")}`)
+                    window.location.assign(`https://pangasari.vercel.app/user/dashboard/${user.firstName+"_"+user.lastName.split(" ").filter(e => e).join("_")}`)
                 }
             })
         })

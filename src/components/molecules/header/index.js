@@ -45,7 +45,7 @@ const Header = () => {
             <div>   
                 <div className="grid grid-cols-2 bg-navy items-center p-5">
                     <div>
-                        <span className="self-center text-white font-bold cursor-pointer" onClick={() => window.location.assign('http://localhost:3000/')}>LOGO</span>
+                        <span className="self-center text-white font-bold cursor-pointer" onClick={() => window.location.assign('https://pangasari.vercel.app/')}>LOGO</span>
                     </div>
                     <div className="flex flex-row justify-items-end items-center justify-end">
                         {
@@ -53,7 +53,7 @@ const Header = () => {
                         }
                         <span className={`text-sm text-gray-100 cursor-pointer ${Object.keys(user).length !== 0 ? "hidden" : "block"}`} onClick={() => window.location.assign('/register')}>Daftar</span>
                         <div>
-                            <Image src={`https://pangasari.herokuapp.com/${user.image}`} alt="gambar profile user" Stylee={`w-14 h-14 rounded-full cursor-pointer ${Object.keys(user).length !== 0 && checkUser !== undefined ? "block" :"hidden"}`} onClick={() => window.location.assign(`http://localhost:3000/user/dashboard/${user.firstName +"_"+ user.lastName.split(" ").filter(e => e).join("_")}`)}/>
+                            <Image src={`https://pangasari.herokuapp.com/${user.image}`} alt="gambar profile user" Stylee={`w-14 h-14 rounded-full cursor-pointer ${Object.keys(user).length !== 0 && checkUser !== undefined ? "block" :"hidden"}`} onClick={() => window.location.assign(`https://pangasari.vercel.app/user/dashboard/${user.firstName +"_"+ user.lastName.split(" ").filter(e => e).join("_")}`)}/>
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         registerPost(register)
-        .then(res => console.log(res))
+        .then(res => window.location.assign("https://pangasari.vercel.app/login"))
         .catch(error => {
             let msgError = {}
             if(error.length >= 1){

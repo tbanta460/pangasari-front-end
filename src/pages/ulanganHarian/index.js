@@ -62,7 +62,7 @@ const UlanganHarian = () => {
 		if(isUser !== null){
 			isUser.point = finnalScore;
 			updateUser(isUser, "", "", isUser._id);
-			window.location.assign(`http://localhost:3000/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
+			window.location.assign(`https://pangasari.vercel.app/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
 		}
 	}
 	const showQuestionAndAnswer = (question) => {
