@@ -4,7 +4,7 @@ import Axios from 'axios'
 // Components
 import { ListTeman, NilaiUlangan, Spp, Button,Gap } from '../..';
 
-const Main = ({value, kelas ,array, dataId, arrayForMobile,...rest}) => {
+const Main = ({value, kelas ,array, dataId, arrayForMobile, sizeScreen,...rest}) => {
     const checkIsMobile = arrayForMobile.indexOf(arrayForMobile[0]).toString() === value
     const checkIsMobileScore = arrayForMobile.indexOf(arrayForMobile[1]).toString() === value
     const checkIsMobilePayment = arrayForMobile.indexOf(arrayForMobile[2]).toString() === value
@@ -65,7 +65,7 @@ const Main = ({value, kelas ,array, dataId, arrayForMobile,...rest}) => {
                     <NilaiUlangan data={dataId} ForStyle={value === array[1] || checkIsMobileScore ? "block" : "hidden"}/>
                 </div>
                 <div>
-                    <Spp Stylee={value === array[2] || checkIsMobilePayment ? "block" : "hidden"} dataUser={user}/>
+                    <Spp Stylee={value === array[2] || checkIsMobilePayment ? "block" : "hidden"} dataUser={user} sizeScreenMobile={sizeScreen}/>
                 </div>
             </div>
         </>

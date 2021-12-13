@@ -75,7 +75,7 @@ const Dashboard = () => {
                 <div>
                     <div className="w-11/12 mx-auto bg-white rounded-xl font-body">
                         <ListMenu onClick={handleClick} value={change} isStyle="flex flex-row p-5 sm:static sm:bg-transparent bg-white left-0 w-full sm:justify-start justify-between fixed bottom-0" Stylee="bg-blue text-white p-2 rounded-lg " array={listMenu} arrayForMobile={listMenuMobile} sizeWindow={windowWidth}/>
-                        <Main value={change} array={listMenu} arrayForMobile={listMenuMobile} kelas={kelas} dataId={user}/>
+                        <Main value={change} array={listMenu} arrayForMobile={listMenuMobile} kelas={kelas} dataId={user} sizeScreen={windowWidth}/>
                     </div>
                 </div>
             </div>
