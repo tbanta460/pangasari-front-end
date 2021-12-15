@@ -39,7 +39,7 @@ const Footer = () => {
                             {
                                 followUs.map((data,index) => {
                                     return (
-                                            <div key={index}>
+                                            <div key={index} className="mx-4">
                                             <li>
                                                 <Image src={data} alt="icon social media" Stylee="w-10 cursor-pointer"/>
                                             </li>

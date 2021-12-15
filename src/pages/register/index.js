@@ -131,7 +131,7 @@ const Register = () => {
                             </div>
                             <div>
                                 <Gap WH="h-10" />
-                                <Button type="submit" Stylee="bg-orange px-7 py-4 text-white rounded-full" title="Register" onClick={handleSubmit}/>
+                                <Button type="submit" Stylee="bg-orange md:px-7 px-4 py-2 md:py-4 text-white rounded-full" title="Register" onClick={handleSubmit}/>
                                 <span className="sm:mx-8 ml-4 cursor-pointer" onClick={() => navigate('/login')}>Already Have an Account?</span>
                             </div>
                         </div>

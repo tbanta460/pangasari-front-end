@@ -51,24 +51,24 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="middle-part-two bg-vintage">
+                        <div className="middle-part-two bg-white">
                             <h3 className="text-center text-2xl md:text-4xl text-black font-bold p-14">Mengapa Memilih SMK Pangasari ?</h3>
-                            <div className="bg-vintage p-14 lg:grid lg:grid-cols-02 flex flex-col-reverse">
+                            <div className="bg-white p-14 lg:grid lg:grid-cols-02 flex flex-col-reverse">
                                 <div className="part-left flex flex-col text-black text-sm">
-                                    <div className="part-one flex flex-row">
-                                        <Image src={IconBook} alt="icon buku" Stylee="w-56"/>
+                                    <div className="part-one flex flex-col md:flex-row">
+                                        <Image src={IconBook} alt="icon buku" Stylee="w-24 mx-auto md:w-56"/>
                                         <Gap WH="w-14"/>
                                         <p className="self-center p-3">Materi yang relevan dengan kurikulum yang baik, guna pembelajaran murid agar lebih tersusun dan mencapai tujuan pendidikan.</p>
                                     </div>
                                     <Gap WH="h-14"/>
-                                    <div className="part-two flex flex-row">
-                                        <Image src={IconEducation} alt="icon education" Stylee="w-96"/>
+                                    <div className="part-two flex flex-col md:flex-row">
+                                        <Image src={IconEducation} alt="icon education" Stylee="w-24 mx-auto md:w-96"/>
                                         <Gap WH="w-14"/>
                                         <p className="self-center p-5">Setiap guru diharuskan menyiapkan materi atau point-point yang penting sebelum pembelajaran dimulai, agar ketika waktu pembelajaran dimulai waktu tidak terbuang sia-sia karena kurangnya kesiapan guru dalam menyusun materi.</p>
                                     </div>
                                     <Gap WH="h-14"/>
-                                    <div className="part-three flex flex-row ">
-                                        <Image src={IconGraduation} alt="icon graduation" Stylee="w-96"/>
+                                    <div className="part-three flex md:flex-row flex-col">
+                                        <Image src={IconGraduation} alt="icon graduation" Stylee="w-24 mx-auto md:w-96"/>
                                         <Gap WH="w-14"/>
                                         <p className="self-center p-3">Kami berharap setiap murid yang lulus dari SMK Pangasari memiliki tujuan yang tepat dan jelas, sehingga kami berusaha untuk mebimbing murid serta menyadari murid akan kesadaran diri untuk masa depannya.</p>
                                     </div>
@@ -79,7 +79,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="middle-part-three flex flex-col p-14">
-                        <h3 className="text-center text-4xl text-black font-bold p-10">Apa Kata Kepala Sekolah Pangasari ?</h3>
+                        <h3 className="text-center text-xl md:text-4xl text-black font-bold p-10">Apa Kata Kepala Sekolah Pangasari ?</h3>
                             <Image src={IconTeacher} alt="teacher ion" Stylee=""/>
                         </div>
                     </div>

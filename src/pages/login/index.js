@@ -147,7 +147,7 @@ const Login = () => {
                             <span>Silahkan Untuk Masuk Terlebih Dahulu Untuk Mengakses Profile.</span>
                         </div>
                         <div className="bg-white shadow-lg p-5 sm:p-10 rounded-xl w-11/12 sm:w-2/3 mx-auto">
-                            <div className={`bg-red-500 w-80 sm:w-96 mx-auto block p-4 text-center text-white rounded-lg my-4 mb-10W ${error !== "" ? "block" : "hidden"}`}>
+                            <div className={`bg-red-500 w-72 sm:w-96 mx-auto block p-4 text-center text-white rounded-lg my-4 mb-10W ${error !== "" ? "block" : "hidden"}`}>
                                 <span className="text-red text-center">{error}</span>
                             </div>
                             <div>
@@ -157,8 +157,8 @@ const Login = () => {
                             </div>
                             <div>
                                 <Gap WH="h-10" />
-                                <Button type="submit" Stylee="bg-blue px-7 py-4 text-white rounded-full" title="Masuk" onClick={handleSubmit}/>
-                                <span className="mx-8 cursor-pointer" onClick={() => navigate('/register')}>Don't have an account?</span>
+                                <Button type="submit" Stylee="bg-blue md:px-7 md:py-4 py-2 px-4 text-white rounded-full" title="Masuk" onClick={handleSubmit}/>
+                                <span className="mx-4 md:mx-8 cursor-pointer" onClick={() => navigate('/register')}>Don't have an account?</span>
                             </div>
                         </div>
                     </div>
