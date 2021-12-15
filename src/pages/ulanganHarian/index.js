@@ -48,11 +48,12 @@ const UlanganHarian = () => {
 				setFinish(true)
 			}
 		}else if(e.target.textContent === "Submit"){
+			alert("Quizz Telah Selesai.")
 			submitQuiz()
 			
 		}
 	}
-	const submitQuiz = () => {
+	const submitQuiz = async () => {
 		const filterPoint = Question.map(data => data.point).filter(data => {
 				if(data !== undefined){
 					return data
@@ -61,7 +62,7 @@ const UlanganHarian = () => {
 		const finnalScore = (filterPoint.length * 100) / Question.length
 		if(isUser !== null){
 			isUser.point = finnalScore;
-			updateUser(isUser, "", "", isUser._id);
+			await updateUser(isUser, "", "", isUser._id);
 			window.location.assign(`https://pangasari.vercel.app/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
 		}
 	}
