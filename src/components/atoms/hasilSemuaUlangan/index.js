@@ -4,7 +4,7 @@ import React from 'react';
 import { Nilai } from '..';
 
 const NilaiUlangan = ({ForStyle, data}) => {
-    console.log(data, "From nilai ulangan")
+
     return (
         <>
             <div className={ForStyle}>

@@ -64,7 +64,7 @@ const UlanganHarian = () => {
 			isUser.point = finnalScore;
 			console.log(finnalScore)
 			await updateUser(isUser, "", "", isUser._id);
-			// window.location.assign(`/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
+			window.location.assign(`/user/dashboard/${isUser.firstName+"_"+isUser.lastName.split(" ").filter(e => e).join("_")}`)
 		}
 	}
 	const showQuestionAndAnswer = (question) => {
