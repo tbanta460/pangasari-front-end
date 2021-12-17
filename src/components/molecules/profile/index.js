@@ -18,7 +18,6 @@ const Profile = ({data}) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const id = data._id
-    
     useEffect(() => {
         const getDataById = async () => {
             if(id !== undefined){

@@ -94,7 +94,6 @@ export const updateUser = (myData, firstName, lastName,id) => {
 	data.append('tahunAjaran', myData.tahunAjaran);
 	data.append('image', myData.image);
 	data.append('point', myData.point);
-	console.log(data)
 	Axios.put(`https://pangasari.herokuapp.com/user/dashboard/${id}`, data, {
 		headers:{
             'content-type': 'multipart/form-data'
