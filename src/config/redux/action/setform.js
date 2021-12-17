@@ -44,7 +44,7 @@ export const registerPost = (myData) => {
 				'cotent-type': 'multipart/form-data'
 			}
 		})
-		.then(respone => respone)
+		.then(respone => resolve(respone))
 		.catch(error => {
 			if(error.response.data.data !== undefined){
 				const errorData = error.response.data.data
